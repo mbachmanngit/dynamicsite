@@ -11,6 +11,36 @@ h1, h2, h3, p, form {
   color: #2E2E2E;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column-1 {
+  width: 600px;
+  height: 500px;
+}
+
+.raw-cta {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  padding: 20px 45px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 .umich {
   width: 100%;
   height: 800px;
@@ -81,12 +111,13 @@ h1, h2, h3, p, form {
 
   .umich-content {
     margin: 115px auto 0 auto;
-    width: 900px;
+    width: 55%;
     height: auto;
   }
 
     .umich-title {
       width: 40%;
+      min-width: 300px
       height: auto;
       border-bottom: 3px solid #FF4949;
     }
@@ -111,10 +142,52 @@ h1, h2, h3, p, form {
     }
 
 .youtube {
+  position: relative;
   width: 100%;
   height: 800px;
   background-color: #2e2e2e;
 }
+
+  .youtube .column-1 {
+    margin: 5% 10%;
+    min-width: 300px;
+  }
+
+    .youtube .column-1 p {
+      width: 90%;
+      display: block;
+      color: #fff;
+      margin: 10px auto 0 auto;
+      padding: 5px 0 5px 5px;
+      border-left: 3px solid #fff;
+    }
+
+    .youtube .column-1 h2 {
+      color: #fff;
+      font-size: 54px;
+    }
+
+      .youtube .column-1 h2 span {
+        font-size: 64px;
+      }
+
+    .youtube .column-1 img {
+      transform: scale(1.15);
+      position: absolute;
+      top: 27.5%;
+    }
+
+  .youtube .raw-cta {
+    position: absolute;
+    top: 82.5%;
+    left: calc(50% - 127px);
+  }
+
+  .youtube .raw-cta:hover {
+    background-color: #fff;
+    color: #2e2e2e;
+  }
+
 .github {
   width: 100%;
   height: 800px;
