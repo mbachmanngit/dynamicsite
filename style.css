@@ -37,6 +37,100 @@ p {
   cursor: pointer;
 }
 
+.nav-open {
+  height: 100vh;
+  background-color: #000;
+  width: 300px;
+  position: fixed;
+  z-index: 5;
+  display: block;
+  opacity: 0.9;
+  opacity: 0;
+}
+
+  .nav--close-cta {
+    position: absolute;
+    right: 0px;
+    width: auto;
+    display: block;
+    cursor: pointer;
+  }
+
+    .nav--close-cta p {
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      right: 45px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .close--cta-x {
+      margin: 5px;
+      display: inline-block;
+    }
+
+      .sbar1 {
+        height: 5px;
+        width: 32px;
+        background-color: #fff;
+        transform: rotate(-45deg) translate(25px, 25px);
+        display: inline-block;
+      }
+
+      .sbar2 {
+        height: 5px;
+        width: 32px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        display: inline-block;
+      }
+
+  nav {
+    height: 100%;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+    nav ul {
+      list-style: none;
+    }
+
+      nav ul li {
+        padding: 15px 0 15px 0;
+        margin: 0 30px 0 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      nav ul li:hover {
+        transform: translateX(-5px);
+      }
+
+      nav ul a {
+        text-decoration: none;
+      }
+
+      .triangle {
+        position: relative;
+        background: #88b7d5;
+      }
+
+      .triangle::after {
+        content: '';
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        clip-path: polygon(100% 0, 45% 50%, 100% 100%);
+}
+
 .umich {
   width: 100%;
   height: 800px;
