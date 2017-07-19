@@ -23,11 +23,11 @@ $(document).ready(function(){
       $('.yt-h2').addClass('c-show');
       $('.yt-p').addClass('c-show');
       $('.yt-img').addClass('c-show');
-      $('.gh-img, .gh-p, .gh-h2').removeClass('c-show');
+      $('.img1, .img2, .gh-p, .gh-h2').removeClass('c-show');
       $('.mbar1, .mbar2, .mbar3').css('background-color', '#fff');
       $('.menu--cta p').css('color', '#fff');
       $('.youtube').css('background-color', '#2e2e2e');
-      $('.youtube').siblings().not('.footer').css(
+      $('.youtube').siblings().not('.footer, .footer-hr').css(
         'background-color', '#2e2e2e'
       );
       $('.nav-open').css(
@@ -74,7 +74,7 @@ $(document).ready(function(){
       $('.mbar1, .mbar2, .mbar3').css('background-color', '#2e2e2e');
       $('.menu--cta p').css('color', '#2e2e2e');
       $('.github').css('background-color', '#fff');
-      $('.github').siblings().not('.footer').css(
+      $('.github').siblings().not('.footer, .footer-hr').css(
         'background-color', '#fff'
       );
       $('.nav-open').css(
@@ -93,12 +93,12 @@ $(document).ready(function(){
       $('.k-h2').addClass('c-show');
       $('.k-p').addClass('c-show');
       $('.kontakt-form').addClass('c-show');
-      $('.gh-img, .gh-p, .gh-h2').removeClass('c-show');
+      $('.img1, .img2, .gh-p, .gh-h2').removeClass('c-show');
       $('.mbar1, .mbar2, .mbar3').css('background-color', '#fff');
       $('.menu--cta p').css('color', '#fff');
       $('.github .raw-cta').css('opacity', '0');
       $('.kontakt').css('background-color', '#FF4949');
-      $('.kontakt').siblings().not('.footer').css(
+      $('.kontakt').siblings().not('.footer, .footer-hr').css(
         'background-color', '#FF4949'
       );
       $('.nav-open').css(
