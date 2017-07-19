@@ -67,7 +67,8 @@ $(document).ready(function(){
     if (ghOffset <= wScroll) {
       $('.gh-h2').addClass('c-show');
       $('.gh-p').addClass('c-show');
-      $('.gh-img').addClass('c-show');
+      $('.img1').addClass('c-show');
+      $('.img2').addClass('c-show');
       $('.github .raw-cta').css('opacity', '1');
       $('.yt-img, .yt-p, .yt-h2').removeClass('c-show');
       $('.mbar1, .mbar2, .mbar3').css('background-color', '#2e2e2e');
