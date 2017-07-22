@@ -160,7 +160,7 @@
       <div class="column-2">
         <h2 class="k-h2">Kontakt</h2>
 
-        <form class="kontakt-form" action="mailto:ma_bachmann@web.de" method="post">
+        <form class="kontakt-form" action="kontaktmsg.php" method="POST">
           <input type="text" name="Name" id="name" value="" placeholder="Name">
           <input type="text" name="Email" id="email" value="" placeholder="E-Mail">
           <textarea name="Nachricht" rows="16" cols="48" id="nachricht" placeholder="Nachricht"></textarea>
