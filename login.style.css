@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Rubik", "Arial", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, form {
+  margin: 0;
+  padding: 0;
+  color: #2E2E2E;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  width: 30%;
+  margin: 0 auto 15px auto;
+  border: 0;
+  min-width: 400px;
+  background-color: #FF4949;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.login-flex {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-content {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-h1 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 1;
+  padding: 25px 0 0 0;
+}
+
+  .login-form {
+
+  }
+
+    .login-form input {
+      width: auto;
+      display: block;
+      padding: 10px;
+      margin: 5px;
+      min-width: 300px;
+      border: 2px solid #2e2e2e;
+      color: #2e2e2e;
+      font-size: 16px;
+    }
+
+      .login-form input:focus {
+        outline: none;
+      }
+
+    .login-form .raw-cta {
+      width: calc(100% - 10px);
+      min-width: 300px;
+      color: #2e2e2e;
+      border: 2px solid #FF4949;
+      border-radius: 0 0 0 0;
+      margin: 5px;
+      font-weight: 500;
+      padding: 10px;
+    }
+
+      .login-form .raw-cta:hover {
+        color: #fff;
+        background-color: #FF4949;
+      }
+
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: #2e2e2e;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color: #2e2e2e;
+       opacity:  0.5;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color: #2e2e2e;
+       opacity:  0.5;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: #2e2e2e;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color: #2e2e2e;
+    }

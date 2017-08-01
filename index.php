@@ -1,3 +1,11 @@
+<?php
+  session_start();
+
+  if (!isset($_SESSION['u_id'])) {
+    header("Location: login.php");
+  }
+ ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -6,7 +14,9 @@
     <meta viewport content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="video.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="functions.js"></script>
     <title>(test) Dynamic Site - MB</title>
@@ -36,6 +46,12 @@
         <div class="triangle">
         </div>
       </nav>
+
+      <div class="logout-cta">
+        <form class="" action="logout.in.php" method="POST">
+          <button type="submit" name="abmelden"><p>Abmelden</p></button>
+        </form>
+      </div>
 
     </div>
 
@@ -69,23 +85,20 @@
 
         <p class="um-p">
 
-          Diese Site dreht sich um meinen Weg in Design und Code. <br>
-          Die Entwicklung von Onlinelösungen und Design sind Lernprozesse, mit jeder Site die man schreibt wird man besser.
-          Das sollte man auch anstreben. Immer.
-          Hier finden Sie vorallem eine Dokumentation meines Lernprozesses und eine
-          Sammlung von meinen Websites. Der vermutlich noch sehr dünne Inhalt wird stetig wachsen.
-          Und wer weis, vielleicht kann ich mit dieser Seite ja auch dem ein oder anderen helfen!
-          Bei Fragen, Anfragen oder Interresse an einem produktiven Austausch <a href="#kontakt">kontaktieren</a>
-          Sie mich gerne über das <a href="#kontakt">Kontaktformular</a> weiter unten auf dieser Site.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
         </p>
 
         <p class="um-p">
 
-          <i>Nun wirklich zu mir</i> <br>
-          Markus Bachmann. 20 Jahre alt. Anstrebender Entwickler für Onlinelösungen, Designer. Soweit die Kurzfassung. <br>
-          Ich schreibe Websites um Menschen mit ihnen zu erreichen, um die online verbrachte Zeit einfach und schön zu gestalten.
-          Design ist eine Einstellung.
+          takimata sanctus est Lorem ipsum dolor sit amet.<br>
+          sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
         </p>
 
@@ -102,19 +115,37 @@
           <h2 class="yt-h2"><span>YouTube.</span><br>Design in seiner<br>Entstehung und mehr.</h2>
 
           <p class="yt-p">
-            Was wenn es eine Plattform gäbe, auf der man Videos von einzelnen Projekten
-            posten kann?... <br>
-            Auf meinem YouTube Kanal poste ich vereinzelt Videos von Designprojekten wie z.B.
-            Speedarts von Fotomanipulationen.
+            takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor <br>
+            takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolo
           </p>
 
         </div>
 
-        <div class="column-1">
-          <img class="yt-img" src="images/ytthumb.png" alt="peacefulbeach">
-        </div>
 
+
+        <div class="column-1">
+          <div class="video-wrap">
+          <div class="video">
+            <video src="peacefulbeach.mp4" autoplay muted></video>
+          </div>
+          <div class="controls">
+
+            <div class="playpause">
+              <i class="material-icons" style="font-size: 42px; color:#fff;">pause</i>
+            </div>
+            <div class="timebar">
+            <input id="seekbar" type="range" min="0" max="100" value="0" step="1">
+            </div>
+            <div class="volume">
+              <i class="material-icons" style="font-size: 36px; color:#fff;">volume_off</i>
+            </div>
+
+          </div>
+        </div>
+        <img class="yt-img" src="images/ytthumb.png" alt="peacefulbeach">
       </div>
+
+    </div>
 
       <a href="#" onclick="alert('für diesen Button ist noch keine Weiterleitung verfügbar.'); return false;">
       <div class="raw-cta">weiter zu YouTube</div></a>
@@ -141,11 +172,10 @@
         </div>
 
         <div class="column-1">
-          <h2 class="gh-h2"><span>GitHub.</span><br>Onlineprojekte, Code<br>und Einblicke</h2>
+          <h2 class="gh-h2"><span>GitHub.</span><br>Onlineprojekte, Code<br>etc.</h2>
           <p class="gh-p">
-            Eine Möglichkeit beine Projekte live zu beobachten und sogar Vorschläge zu machen. <br>
-            Sie können jede meiner Änderungen im Code verfolgen und nachvollziehen,
-            erklärt durch meine Notizen.
+            takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor <br>
+            takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolo
           </p>
           <a href="#" onclick="alert('für diesen Button ist noch keine Weiterleitung verfügbar.'); return false;">
           <div class="raw-cta">weiter zu GitHub</div></a>

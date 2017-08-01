@@ -145,6 +145,42 @@ p {
         clip-path: polygon(100% 0, 45% 50%, 100% 100%);
       }
 
+    .logout-cta {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      text-align: right;
+      margin-top: 5.8vh;
+    }
+
+      .logout-cta button {
+        border: none;
+        background-color: inherit;
+        font-size: 16px;;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 30px 10px 10px;
+        transition: all 0.3s ease-in-out;
+      }
+
+        .logout-cta button:hover {
+          padding-left: 250px;
+          background-color: #000;
+          color: #fff;
+        }
+
+        .logout-cta button > p {
+          color: #fff;
+        }
+
+        .logout-cta button:hover > p{
+          color: #fff !important;
+        }
+
+        .logout-cta button:focus {
+          outline: none;
+        }
+
 .umich {
   width: 100%;
   height: auto;
@@ -654,6 +690,8 @@ p {
   top: 175px;
   background-color: #FF4949;
 }
+
+/*Anpassung Makierung*/
 
 ::selection {
   background: rgba(255, 0, 30, 0.6);
