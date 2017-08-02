@@ -27,6 +27,10 @@ $(document).ready(function(){
     var ghOffset = $('.gh-h2').offset().top - hwHeight;
     var kOffset = $('.k-h2').offset().top - hwHeight;
 
+    $('.mb-title').css({
+      'top': +(50 + wScroll * 0.0525) +'vh'
+    });
+
   if (landOffset <= wScroll) {
         $('.um-h2').addClass('c-show');
         $('.um-p').addClass('c-show');
@@ -34,8 +38,15 @@ $(document).ready(function(){
         $('.video-wrap').removeClass('v-show');
         $('.yt-img').css('display', 'block');
         $('.yt-img, .yt-p, .yt-h2').removeClass('c-show');
-        $('.mbar1, .mbar2, .mbar3').css('background-color', '#fff');
-        $('.menu--cta p').css('color', '#fff');
+
+        if (wScroll <= $('#landingp').height() / 2) {
+          $('.mbar1, .mbar2, .mbar3').css('background-color', '#2e2e2e');
+          $('.menu--cta p').css('color', '#2e2e2e')
+        } else {
+          $('.mbar1, .mbar2, .mbar3').css('background-color', '#fff');
+          $('.menu--cta p').css('color', '#fff');
+        }
+
         $('.logout-cta button > p').css('color', '#fff');
         $('.umich').css('background-color', '#fff');
         $('.nav-open').css(
@@ -48,7 +59,9 @@ $(document).ready(function(){
         $('.triangle').removeClass('yt-triangle');
         $('.triangle').removeClass('k-triangle');
         $('.triangle').removeClass('gh-triangle');
-        $('.triangle').addClass('um-triangle');
+        $('.triangle').removeClass('um-triangle');
+        $('.triangle').addClass('land-triangle');
+
       }
 
 
@@ -74,6 +87,7 @@ $(document).ready(function(){
             $('.triangle').removeClass('yt-triangle');
             $('.triangle').removeClass('k-triangle');
             $('.triangle').removeClass('gh-triangle');
+            $('.triangle').removeClass('land-triangle');
             $('.triangle').addClass('um-triangle');
 }
 

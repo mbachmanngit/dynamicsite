@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="functions.js"></script>
-    <title>(test) Dynamic Site - MB</title>
+    <title>M. Bachmann</title>
   </head>
   <body>
 
