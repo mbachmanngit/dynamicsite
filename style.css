@@ -41,6 +41,56 @@ p {
     outline: none;
   }
 
+header {
+  height: 100vh;
+  width: 100vw;
+  background: url(images/peacefulbeach.jpg) center center;
+  background-size: cover;
+}
+
+  .bg-stripes {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: -moz-linear-gradient(45deg, transparent 25%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.2) 75%);
+    background-image: -o-linear-gradient(45deg, transparent 25%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.2) 75%);
+    background-image: linear-gradient(45deg, transparent 25%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.2) 75%);
+    background-size:5px 5px;
+    z-index: 2;
+  }
+
+    .mb-title {
+      position: absolute;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.4);
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      padding: 25px 0;
+      text-align: center;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+    }
+
+      .mb-title h1 {
+        font-size: 96px;
+        color: #fff;
+        font-weight: 200;
+        line-height: 1;
+      }
+
+      .utitle {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+      }
+
+        .utitle p {
+          padding: 2px 0 2px 0;
+          font-size: 28px;
+          color: #fff;
+        }
+
 .nav-open {
   height: 100vh;
   background-color: #2e2e2e;
@@ -184,7 +234,7 @@ p {
 .umich {
   width: 100%;
   height: auto;
-  padding: 0 0 150px 0;
+  padding: 150px 0;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
 }
@@ -234,32 +284,8 @@ p {
       left: 42px;
     }
 
-  .mb-title {
-    text-align: center;
-  }
-
-    .mb-title h1 {
-      font-size: 96px;
-      font-weight: 200;
-      line-height: 1;
-      padding: 25px 0 0 0;
-    }
-
-    .utitle {
-      width: 300px;
-      display: block;
-      margin: 0 auto;
-    }
-
-      .utitle p {
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 2px 0 2px 0;
-        font-size: 28px;
-        color: #fff;
-      }
-
   .umich-content {
-    margin: 115px auto 0 auto;
+    margin: 0 auto;
     width: 55%;
     height: auto;
   }

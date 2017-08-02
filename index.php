@@ -55,8 +55,8 @@
 
     </div>
 
-    <section id="umich" class="umich">
-
+  <header id="landingp">
+    <div class="bg-stripes">
       <div class="menu--cta">
 
         <div class="mbar1"></div>
@@ -76,14 +76,17 @@
         </div>
 
       </div>
+    </div>
+  </header>
 
+    <section id="umich" class="umich">
       <div class="umich-content">
 
-        <div class="umich-title">
+         <div class="umich-title">
           <h2 class="um-h2">Über Mich</h2>
         </div>
 
-        <p class="um-p">
+       <p class="um-p">
 
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
@@ -91,7 +94,7 @@
         Stet clita kasd gubergren,
         no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-        </p>
+      </p>
 
         <p class="um-p">
 

@@ -21,10 +21,61 @@ $(document).ready(function(){
 
     var wScroll = $(window).scrollTop();
     var hwHeight = window.innerHeight / 2.3;
-    var umOffset = $('.um-h2').offset().top  - hwHeight;
+    var landOffset = $('#landingp').offset().top  - hwHeight;
+    var umOffset = $('.um-h2').offset().top  - window.innerHeight / 4.5;
     var ytOffset = $('.yt-h2').offset().top  - hwHeight;
     var ghOffset = $('.gh-h2').offset().top - hwHeight;
     var kOffset = $('.k-h2').offset().top - hwHeight;
+
+  if (landOffset <= wScroll) {
+        $('.um-h2').addClass('c-show');
+        $('.um-p').addClass('c-show');
+        $('.um-img').addClass('c-show');
+        $('.video-wrap').removeClass('v-show');
+        $('.yt-img').css('display', 'block');
+        $('.yt-img, .yt-p, .yt-h2').removeClass('c-show');
+        $('.mbar1, .mbar2, .mbar3').css('background-color', '#fff');
+        $('.menu--cta p').css('color', '#fff');
+        $('.logout-cta button > p').css('color', '#fff');
+        $('.umich').css('background-color', '#fff');
+        $('.nav-open').css(
+          'background-color', '#2e2e2e'
+        );
+        $('nav ul li').css('color', '#fff');
+        $('.nav--close-cta p').css('color', '#fff');
+        $('.sbar1, .sbar2').css('background-color', '#fff');
+
+        $('.triangle').removeClass('yt-triangle');
+        $('.triangle').removeClass('k-triangle');
+        $('.triangle').removeClass('gh-triangle');
+        $('.triangle').addClass('um-triangle');
+      }
+
+
+          if (umOffset <= wScroll) {
+            console.log('hi');
+            $('.um-h2').addClass('c-show');
+            $('.um-p').addClass('c-show');
+            $('.um-img').addClass('c-show');
+            $('.mbar1, .mbar2, .mbar3').css('background-color', '#2e2e2e');
+            $('.menu--cta p').css('color', '#2e2e2e');
+            $('.logout-cta button > p').css('color', '#fff');
+            $('.umich').css('background-color', '#fff');
+            $('.umich').siblings().not('.footer, .footer-hr').css(
+              'background-color', '#fff'
+            );
+            $('.nav-open').css(
+              'background-color', '#2e2e2e'
+            );
+            $('nav ul li').css('color', '#fff');
+            $('.nav--close-cta p').css('color', '#fff');
+            $('.sbar1, .sbar2').css('background-color', '#fff');
+
+            $('.triangle').removeClass('yt-triangle');
+            $('.triangle').removeClass('k-triangle');
+            $('.triangle').removeClass('gh-triangle');
+            $('.triangle').addClass('um-triangle');
+}
 
     if (ytOffset <= wScroll) {
       $('.yt-h2').addClass('c-show');
@@ -49,31 +100,7 @@ $(document).ready(function(){
       $('.triangle').removeClass('k-triangle');
       $('.triangle').addClass('yt-triangle');
 
-    } else {
-          $('.um-h2').addClass('c-show');
-          $('.um-p').addClass('c-show');
-          $('.um-img').addClass('c-show');
-          $('.video-wrap').removeClass('v-show');
-          $('.yt-img').css('display', 'block');
-          $('.yt-img, .yt-p, .yt-h2').removeClass('c-show');
-          $('.mbar1, .mbar2, .mbar3').css('background-color', '#2e2e2e');
-          $('.menu--cta p').css('color', '#2e2e2e');
-          $('.logout-cta button > p').css('color', '#fff');
-          $('.umich').css('background-color', '#fff');
-          $('.nav-open').css(
-            'background-color', '#2e2e2e'
-          );
-          $('nav ul li').css('color', '#fff');
-          $('.nav--close-cta p').css('color', '#fff');
-          $('.sbar1, .sbar2').css('background-color', '#fff');
-
-          $('.triangle').removeClass('yt-triangle');
-          $('.triangle').removeClass('k-triangle');
-          $('.triangle').removeClass('gh-triangle');
-          $('.triangle').addClass('um-triangle');
-
-
-        }
+    }
 
     if (ghOffset <= wScroll) {
       $('.gh-h2').addClass('c-show');
